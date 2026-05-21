@@ -1,14 +1,14 @@
 import { landing } from "@/content/landing";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { FeatureCard } from "@/components/ui/FeatureCard";
+import { ValueFeature } from "@/components/ui/ValueFeature";
 import { valueIcons } from "@/components/ui/icons";
 
 export function ValuesSection() {
   const { title, subtitle, items } = landing.values;
 
   return (
-    <section className="bg-mesocore-gray-50 py-16 md:py-24">
+    <section className="bg-white py-16 md:py-24">
       <Container>
         <div className="mb-14 flex justify-center">
           <SectionHeading title={title} subtitle={subtitle} align="center" />
@@ -17,7 +17,7 @@ export function ValuesSection() {
           {items.map((item) => {
             const Icon = valueIcons[item.icon];
             return (
-              <FeatureCard
+              <ValueFeature
                 key={item.id}
                 icon={<Icon />}
                 title={item.title}

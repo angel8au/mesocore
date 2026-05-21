@@ -47,66 +47,90 @@ export function IconSparkle({ className = "w-8 h-8" }: IconProps) {
   );
 }
 
-export function IconTarget({ className = "w-8 h-8" }: IconProps) {
+/** Aplicación localizada — diana / zona específica */
+export function IconLocalized({ className = "w-10 h-10" }: IconProps) {
   return (
     <svg
       className={className}
-      viewBox="0 0 32 32"
+      viewBox="0 0 40 40"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.5"
+      strokeWidth="1.25"
       aria-hidden
     >
-      <circle cx="16" cy="16" r="12" />
-      <circle cx="16" cy="16" r="6" />
-      <circle cx="16" cy="16" r="1.5" fill="currentColor" />
+      <circle cx="20" cy="20" r="14" />
+      <circle cx="20" cy="20" r="8" />
+      <path d="M20 4v32M4 20h32" />
+      <circle cx="20" cy="20" r="2" fill="currentColor" stroke="none" />
     </svg>
   );
 }
 
-export function IconShield({ className = "w-8 h-8" }: IconProps) {
+/** Integración en protocolos — ciclo / esquema */
+export function IconProtocols({ className = "w-10 h-10" }: IconProps) {
   return (
     <svg
       className={className}
-      viewBox="0 0 32 32"
+      viewBox="0 0 40 40"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.5"
+      strokeWidth="1.25"
       aria-hidden
     >
-      <path d="M16 4L6 8v8c0 6.5 4.3 12.5 10 14 5.7-1.5 10-7.5 10-14V8l-10-4z" />
+      <path
+        strokeLinecap="round"
+        d="M28 12a10 10 0 0 0-17.3-5M12 28a10 10 0 0 0 17.3 5"
+      />
+      <path strokeLinecap="round" d="M8 16h6l2-6M32 24h-6l-2 6" />
+      <circle cx="20" cy="20" r="3" />
+      <path d="M20 17v6M17 20h6" strokeLinecap="round" />
     </svg>
   );
 }
 
-export function IconFlask({ className = "w-8 h-8" }: IconProps) {
+/** Formulación avanzada — pipeta */
+export function IconPipette({ className = "w-10 h-10" }: IconProps) {
   return (
     <svg
       className={className}
-      viewBox="0 0 32 32"
+      viewBox="0 0 40 40"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.5"
+      strokeWidth="1.25"
       aria-hidden
     >
-      <path d="M12 4h8v6l6 14H6l6-14V4z" />
-      <path d="M10 20h12" />
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        d="M14 6h12v6l-4 18H18L14 12V6z"
+      />
+      <path d="M16 10h8" />
+      <path strokeLinecap="round" d="M20 30v4" />
+      <circle cx="20" cy="35" r="1" fill="currentColor" />
+      <path
+        strokeLinecap="round"
+        d="M8 14c2-2 4-3 6-3M32 14c-2-2-4-3-6-3"
+        opacity="0.35"
+      />
     </svg>
   );
 }
 
-export function IconUser({ className = "w-8 h-8" }: IconProps) {
+/** Uso profesional exclusivo */
+export function IconProfessional({ className = "w-10 h-10" }: IconProps) {
   return (
     <svg
       className={className}
-      viewBox="0 0 32 32"
+      viewBox="0 0 40 40"
       fill="none"
       stroke="currentColor"
-      strokeWidth="1.5"
+      strokeWidth="1.25"
       aria-hidden
     >
-      <circle cx="16" cy="10" r="5" />
-      <path d="M8 26c0-4.4 3.6-8 8-8s8 3.6 8 8" />
+      <circle cx="20" cy="12" r="5" />
+      <path strokeLinecap="round" d="M10 32c0-5.5 4.5-10 10-10s10 4.5 10 10" />
+      <rect x="16" y="22" width="8" height="6" rx="1" />
+      <path d="M18 25h4" strokeLinecap="round" />
     </svg>
   );
 }
@@ -134,8 +158,8 @@ export const productIcons = {
 } as const;
 
 export const valueIcons = {
-  target: IconTarget,
-  shield: IconShield,
-  flask: IconFlask,
-  user: IconUser,
+  localized: IconLocalized,
+  protocols: IconProtocols,
+  pipette: IconPipette,
+  professional: IconProfessional,
 } as const;

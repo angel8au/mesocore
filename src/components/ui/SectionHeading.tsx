@@ -18,7 +18,7 @@ export function SectionHeading({
     variant === "light" ? "text-white" : "text-mesocore-gray-900";
   const subtitleColor =
     variant === "light" ? "text-white/80" : "text-mesocore-gray-500";
-  const labelColor = variant === "light" ? "text-white/70" : "text-copper";
+  const labelColor = variant === "light" ? "text-white/70" : "text-primary";
 
   return (
     <div className={`max-w-3xl ${alignClass}`}>
@@ -30,7 +30,7 @@ export function SectionHeading({
         </p>
       )}
       <h2
-        className={`text-2xl font-semibold leading-tight md:text-3xl lg:text-4xl ${titleColor}`}
+        className={`font-title text-2xl leading-tight md:text-3xl lg:text-4xl ${titleColor}`}
       >
         {title}
       </h2>

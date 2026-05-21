@@ -2,7 +2,7 @@ export const landing = {
   hero: {
     title: "Estética aplicada con inteligencia",
     subtitle:
-      "Mesoterapia de precisión con formulaciones de origen europeo. Diseñada para profesionales que buscan resultados medibles y protocolos claros.",
+      "Adquiere tecnología avanzada para la eliminación de grasa localizada. Déjanos tu correo para asignarte un distribuidor autorizado y coordinar tu compra.",
     cta: "MÁS INFORMACIÓN",
     emailPlaceholder: "Tu correo electrónico",
     successMessage: "Gracias. Pronto nos pondremos en contacto contigo.",
@@ -12,10 +12,30 @@ export const landing = {
     description:
       "Fórmula lipolítica y reafirmante de alta concentración enzimática. Indicada para tratamientos de remodelación corporal y facial con enfoque técnico y resultados progresivos.",
     features: [
-      { id: "lipolytic", label: "Lipolítico", icon: "droplet" as const },
-      { id: "draining", label: "Drenante", icon: "waves" as const },
-      { id: "firming", label: "Reafirmante", icon: "sparkle" as const },
+      {
+        id: "adiposa",
+        line1: "Designación",
+        line2: "Adiposa",
+        image: "/images/icons/designacion-adiposa.png",
+        imageAlt: "Icono designación adiposa",
+      },
+      {
+        id: "focalizar",
+        line1: "Focalizar el",
+        line2: "tratamiento",
+        image: "/images/icons/focalizar-tratamiento.png",
+        imageAlt: "Icono focalizar el tratamiento",
+      },
+      {
+        id: "protocolos",
+        line1: "Optimizar",
+        line2: "protocolos",
+        image: "/images/icons/optimizar-protocolos.png",
+        imageAlt: "Icono optimizar protocolos",
+      },
     ],
+    footnote:
+      "*Desarrollado bajo un estricto criterio técnico y de alta especialización",
   },
   technical: {
     title: "Acciones específicas con enfoque técnico",
@@ -25,43 +45,46 @@ export const landing = {
       "Esto no es estética superficial. Es una herramienta técnica aplicada con criterio profesional.",
   },
   origin: {
-    label: "CALIDAD EUROPEA",
+    label: "CRITERIO CLÍNICO",
     title: "Formulación de origen europeo",
-    description:
-      "Desarrollada bajo estándares farmacéuticos europeos. Control de calidad riguroso, trazabilidad completa y formulaciones pensadas para el uso exclusivo en cabina profesional.",
+    descriptionBefore:
+      "Nuestros productos se desarrollan bajo estándares que priorizan la precisión en cada activo, ofreciendo la máxima confiabilidad en entornos clínicos. Guiados por el ",
+    descriptionBold: "rigor y el criterio técnico",
+    descriptionAfter:
+      ", respondemos a las exigencias de la estética profesional donde la calidad es un principio absoluto.",
   },
   values: {
     title: "Una propuesta enfocada en precisión",
     subtitle:
-      "Tecnología mesoterápica al servicio del criterio clínico y la excelencia en resultados.",
+      "Desarrollamos soluciones diseñadas específicamente para optimizar la práctica clínica, garantizando seguridad y consistencia en cada aplicación.",
     items: [
       {
-        id: "precision",
-        title: "Enfoque en precisión",
+        id: "localized",
+        title: "Aplicación localizada",
         description:
-          "Dosis calibradas y protocolos definidos para resultados reproducibles en cada sesión.",
-        icon: "target" as const,
+          "Diseñado exclusivamente para actuar de forma directa sobre zonas críticas específicas.",
+        icon: "localized" as const,
       },
       {
-        id: "safety",
-        title: "Seguridad",
+        id: "protocols",
+        title: "Integración en protocolos",
         description:
-          "Formulaciones testadas bajo normativa europea con perfiles de tolerancia optimizados.",
-        icon: "shield" as const,
+          "Compatible y eficiente al combinarse con esquemas avanzados de mesoterapia.",
+        icon: "protocols" as const,
       },
       {
         id: "formulation",
-        title: "Formulación",
+        title: "Formulación avanzada",
         description:
-          "Activos de alta pureza seleccionados por su eficacia demostrada en mesoterapia.",
-        icon: "flask" as const,
+          "Activos de alta pureza que garantizan una acción predecible y controlada.",
+        icon: "pipette" as const,
       },
       {
         id: "professional",
-        title: "Uso profesional",
+        title: "Uso profesional exclusivo",
         description:
-          "Exclusivo para profesionales certificados. Formación y soporte técnico incluidos.",
-        icon: "user" as const,
+          "Reservado para profesionales certificados en entornos de cabina y clínica estética.",
+        icon: "professional" as const,
       },
     ],
   },
@@ -73,6 +96,8 @@ export const landing = {
   footer: {
     copyright: "© 2026 MESOCORE. Todos los derechos reservados.",
     legal: "Uso exclusivo profesional.",
+    termsLabel: "Términos y condiciones",
+    termsHref: "/terminos-y-condiciones",
   },
   metadata: {
     title: "MESOCORE | Estética aplicada con inteligencia",

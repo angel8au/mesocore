@@ -28,7 +28,7 @@ export function FeatureCard({
   return (
     <div className="flex flex-col items-center text-center px-4">
       <div className="mb-4 text-mesocore-gray-900">{icon}</div>
-      <h3 className="mb-2 text-base font-semibold text-mesocore-gray-900">
+      <h3 className="font-title mb-2 text-base text-mesocore-gray-900">
         {title}
       </h3>
       <p className="text-sm leading-relaxed text-mesocore-gray-500">

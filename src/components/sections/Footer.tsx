@@ -1,16 +1,18 @@
+import Link from "next/link";
 import { landing } from "@/content/landing";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { IconFacebook, IconInstagram } from "@/components/ui/icons";
 
 export function Footer() {
-  const { copyright, legal } = landing.footer;
+  const { copyright, legal, termsLabel, termsHref } = landing.footer;
 
   return (
-    <footer className="border-t border-mesocore-gray-100 bg-mesocore-gray-50 py-8">
-      <Container>
-        <div className="flex flex-col items-center gap-6 md:flex-row md:justify-between">
-          <div className="flex gap-4 text-mesocore-gray-500">
+    <footer className="border-t border-mesocore-gray-100 bg-mesocore-gray-50 py-8 md:py-10">
+      <Container className="flex flex-col">
+        <div className="grid grid-cols-1 items-center gap-6 pb-8 md:grid-cols-3 md:pb-10">
+          {/* Móvil: logo → redes → términos */}
+          <div className="order-2 flex justify-center gap-4 text-mesocore-gray-500 md:order-1 md:justify-start">
             <a
               href="#"
               aria-label="Facebook de MESOCORE"
@@ -26,12 +28,26 @@ export function Footer() {
               <IconInstagram />
             </a>
           </div>
-          <Logo variant="dark" />
-          <p className="text-center text-xs text-mesocore-gray-500 md:text-right">
-            {copyright}
-            <br />
-            {legal}
-          </p>
+
+          <div className="order-1 flex justify-center md:order-2">
+            <Link href="/" aria-label="MESOCORE inicio">
+              <Logo variant="primary" />
+            </Link>
+          </div>
+
+          <div className="order-3 flex justify-center md:justify-end">
+            <Link
+              href={termsHref}
+              className="text-xs text-mesocore-gray-900 underline-offset-4 transition-colors hover:text-primary hover:underline"
+            >
+              {termsLabel}
+            </Link>
+          </div>
+        </div>
+
+        <div className="border-t border-mesocore-gray-100 pt-6 text-center text-xs text-mesocore-gray-500">
+          <p>{copyright}</p>
+          <p className="mt-1">{legal}</p>
         </div>
       </Container>
     </footer>
