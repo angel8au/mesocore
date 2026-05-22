@@ -12,10 +12,10 @@ export function OriginSection() {
   } = landing.origin;
 
   return (
-    <section className="overflow-hidden bg-copper">
+    <section className="overflow-hidden bg-primary">
       <Container className="pb-0">
-        <div className="grid min-h-[480px] gap-8 lg:grid-cols-2 lg:min-h-[560px] lg:gap-16">
-          <div className="flex max-w-xl flex-col justify-center py-12 lg:py-16">
+        <div className="grid min-h-[480px] gap-2 lg:grid-cols-2 lg:min-h-[560px] lg:gap-16">
+          <div className="flex max-w-xl flex-col justify-center pt-12 pb-0 lg:py-16">
             <p className="mb-3 text-xs font-medium tracking-[0.2em] text-white/80 uppercase">
               {label}
             </p>

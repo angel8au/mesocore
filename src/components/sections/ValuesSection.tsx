@@ -8,7 +8,7 @@ export function ValuesSection() {
   const { title, subtitle, items } = landing.values;
 
   return (
-    <section className="bg-white py-16 md:py-24">
+    <section className="bg-mesocore-background py-16 md:py-24">
       <Container>
         <div className="mb-14 flex justify-center">
           <SectionHeading title={title} subtitle={subtitle} align="center" />

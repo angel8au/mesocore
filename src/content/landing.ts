@@ -2,7 +2,7 @@ export const landing = {
   hero: {
     title: "Estética aplicada con inteligencia",
     subtitle:
-      "Adquiere tecnología avanzada para la eliminación de grasa localizada. Déjanos tu correo para asignarte un distribuidor autorizado y coordinar tu compra.",
+      "Formulaciones para mesoterapia avanzada desarrolladas para actuar con precisión y enfoque científico, con el objetivo de lograr beneficios notorios y específicos.",
     cta: "MÁS INFORMACIÓN",
     emailPlaceholder: "Tu correo electrónico",
     successMessage: "Gracias. Pronto nos pondremos en contacto contigo.",
@@ -35,7 +35,7 @@ export const landing = {
       },
     ],
     footnote:
-      "*Desarrollado bajo un estricto criterio técnico y de alta especialización",
+      "*Desarrollado bajo un estricto criterio técnico y de alta especialización.",
   },
   technical: {
     title: "Acciones específicas con enfoque técnico",
@@ -91,7 +91,9 @@ export const landing = {
   finalCta: {
     title: "La evolución de la mesoterapia hacia la precisión",
     subtitle:
-      "Descubre cómo MESOCORE puede integrarse en tu protocolo. Déjanos tu contacto y un asesor te responderá.",
+      "Para información sobre formulaciones, distribución autorizada o integración en tu protocolo, escríbenos. Un asesor te responderá personalmente.",
+    cta: "CONTACTAR POR CORREO",
+    email: "cristhofii@gmail.com",
   },
   footer: {
     copyright: "© 2026 MESOCORE. Todos los derechos reservados.",
