@@ -21,9 +21,9 @@ export function HeroSection() {
               </p>
             </div>
             <div className="flex w-full justify-center lg:h-full lg:min-h-0 lg:items-end">
-              <div className="relative aspect-[571/1024] h-[min(52vh,480px)] w-full max-w-[280px] sm:max-w-xs lg:h-full lg:max-h-[620px] lg:max-w-sm">
+              <div className="relative aspect-[400/684] h-[min(52vh,480px)] w-full max-w-[280px] sm:max-w-xs lg:h-full lg:max-h-[620px] lg:max-w-sm">
                 <Image
-                  src="/images/modelo-hero.png"
+                  src="/images/hero-model.png"
                   alt="Modelo profesional representando estética aplicada con inteligencia"
                   fill
                   priority
