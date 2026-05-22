@@ -10,18 +10,21 @@ export function ProductSection() {
     <section className="bg-mesocore-background py-16 md:py-24">
       <Container>
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
-          <div className="relative aspect-[1024/764] w-full max-w-lg mx-auto lg:max-w-none">
-            <Image
-              src="/images/product-vials.png"
-              alt="Tres viales EnzyCore 1500 de MESOCORE con etiqueta Enzimas Cocktail"
-              width={1024}
-              height={764}
-              className="h-full w-full object-contain"
-              sizes="(max-width: 1024px) 100vw, 50vw"
-            />
+          <div className="flex justify-center">
+            <div className="relative aspect-[391/399] w-full max-w-[230px] lg:max-w-[390.34px]">
+              <Image
+                src="/images/product-vials.png"
+                alt="Tres viales EnzyCore 1500 de MESOCORE con etiqueta Enzimas Cocktail"
+                width={391}
+                height={399}
+                unoptimized
+                className="h-full w-full object-contain object-center"
+                sizes="(max-width: 1024px) 100vw, 50vw"
+              />
+            </div>
           </div>
           <div>
-            <h2 className="font-title mb-4 text-2xl text-mesocore-gray-900 md:text-3xl">
+            <h2 className="text-title-2 mb-4 text-mesocore-gray-900">
               {name}
             </h2>
             <p className="mb-10 max-w-lg text-base leading-relaxed text-mesocore-gray-500">

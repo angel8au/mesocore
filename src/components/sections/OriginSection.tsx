@@ -19,7 +19,7 @@ export function OriginSection() {
             <p className="mb-3 text-xs font-medium tracking-[0.2em] text-white/80 uppercase">
               {label}
             </p>
-            <h2 className="font-title text-2xl leading-tight text-white md:text-3xl lg:text-4xl">
+            <h2 className="text-title-2 text-white">
               {title}
             </h2>
             <p className="mt-4 text-base leading-relaxed font-light text-white/90 md:text-lg">

@@ -30,7 +30,7 @@ export function SectionHeading({
         </p>
       )}
       <h2
-        className={`font-title text-2xl leading-tight md:text-3xl lg:text-4xl ${titleColor}`}
+        className={`text-title-2 ${titleColor}`}
       >
         {title}
       </h2>
