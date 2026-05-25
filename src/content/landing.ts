@@ -1,7 +1,7 @@
 export const landing = {
   hero: {
     label: "FORMULACIONES EUROPEAS",
-    title: "Mesoterapia avanzada con precisión científica.",
+    title: "Mesoterapia avanzada con precisión científica",
     subtitle:
       "Formulaciones para mesoterapia avanzada desarrolladas para actuar con precisión y enfoque científico, con el objetivo de lograr beneficios notorios y específicos.",
     cta: "MÁS INFORMACIÓN",

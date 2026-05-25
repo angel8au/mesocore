@@ -11,9 +11,9 @@ export default function Home() {
     <main>
       <HeroSection />
       <ProductSection />
-      <TechnicalSection />
-      <OriginSection />
       <ValuesSection />
+      <OriginSection />
+      <TechnicalSection />
       <FinalCtaSection />
       <Footer />
     </main>

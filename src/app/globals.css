@@ -140,6 +140,7 @@ h6 {
 .text-title-1,
 .text-title-2,
 .text-title-3 {
+  font-weight: 300;
   font-style: normal;
 }
 

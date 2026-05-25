@@ -14,10 +14,10 @@ export function ProductEnzymeDetails({
   closing,
 }: ProductEnzymeDetailsProps) {
   return (
-    <details className="group mt-8 overflow-hidden rounded-sm border border-mesocore-border-secondary">
-      <summary className="text-actionable text-actionable-on-light flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-4 text-left text-base transition-colors hover:text-primary-hover md:px-5 md:text-lg [&::-webkit-details-marker]:hidden">
+    <details className="group mt-8 overflow-hidden rounded-sm border border-mesocore-border-secondary transition-colors hover:border-primary hover:bg-primary-subtle/40">
+      <summary className="group/summary text-actionable text-actionable-on-light flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-4 text-left text-base transition-colors hover:text-primary-hover md:px-5 md:text-lg [&::-webkit-details-marker]:hidden">
         <span>{trigger}</span>
-        <IconChevronDown className="size-6 shrink-0 text-mesocore-gray-900 transition-transform duration-200 group-open:rotate-180" />
+        <IconChevronDown className="size-6 shrink-0 text-primary transition-[transform,color] duration-200 group-open:rotate-180 group-hover/summary:text-primary-hover" />
       </summary>
       <div className="space-y-4 border-t border-mesocore-border-secondary px-4 pb-4 pt-4 text-base leading-relaxed text-mesocore-text-secondary md:px-5 md:pb-5 md:text-lg">
         <p>{intro}</p>
