@@ -23,8 +23,16 @@
   --mesocore-white: #ffffff;
   --mesocore-gray-50: #f5f5f5;
   --mesocore-gray-100: #ebebeb;
+  --mesocore-gray-300: #c4c4c4;
   --mesocore-gray-500: #6b6b6b;
   --mesocore-gray-900: #1a1a1a;
+
+  /* Text & borders */
+  --mesocore-text-secondary: var(--mesocore-gray-500);
+  --mesocore-border-secondary: var(--mesocore-gray-300);
+
+  /* Radius */
+  --mesocore-radius-sm: 7px;
 
   /* Semantic aliases */
   --background: var(--mesocore-background);
@@ -40,6 +48,7 @@
   --color-black: var(--mesocore-black);
   --color-gray-50: var(--mesocore-gray-50);
   --color-gray-100: var(--mesocore-gray-100);
+  --color-gray-300: var(--mesocore-gray-300);
   --color-gray-500: var(--mesocore-gray-500);
   --color-gray-900: var(--mesocore-gray-900);
 
@@ -58,7 +67,7 @@
 
 @media (min-width: 768px) {
   :root {
-    --text-title-1: 64px;
+    --text-title-1: 68px;
     --text-title-2: 48px;
     --text-title-3: 20px;
   }
@@ -90,8 +99,13 @@
   --color-mesocore-white: var(--mesocore-white);
   --color-mesocore-gray-50: var(--mesocore-gray-50);
   --color-mesocore-gray-100: var(--mesocore-gray-100);
+  --color-mesocore-gray-300: var(--mesocore-gray-300);
   --color-mesocore-gray-500: var(--mesocore-gray-500);
   --color-mesocore-gray-900: var(--mesocore-gray-900);
+  --color-mesocore-text-secondary: var(--mesocore-text-secondary);
+  --color-mesocore-border-secondary: var(--mesocore-border-secondary);
+
+  --radius-sm: var(--mesocore-radius-sm);
 
   --font-body: var(--font-family-body);
   --font-title: var(--font-family-title);
@@ -142,6 +156,37 @@ h6 {
 .text-title-3 {
   font-size: var(--text-title-3);
   line-height: var(--text-title-3-line-height);
+}
+
+.text-eyebrow {
+  font-size: 1rem;
+  font-weight: 550;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.text-eyebrow-on-dark {
+  color: rgb(255 255 255 / 0.8);
+}
+
+.text-eyebrow-on-light {
+  color: var(--mesocore-primary);
+}
+
+.text-actionable {
+  font-weight: 500;
+  line-height: 1.4;
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+.text-actionable-on-light {
+  color: var(--mesocore-primary);
+}
+
+.text-actionable-on-dark {
+  color: var(--mesocore-white);
 }
 
 .hero-section {

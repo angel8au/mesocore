@@ -1,6 +1,7 @@
 export const landing = {
   hero: {
-    title: "Estética aplicada con inteligencia",
+    label: "FORMULACIONES EUROPEAS",
+    title: "Mesoterapia avanzada con precisión científica.",
     subtitle:
       "Formulaciones para mesoterapia avanzada desarrolladas para actuar con precisión y enfoque científico, con el objetivo de lograr beneficios notorios y específicos.",
     cta: "MÁS INFORMACIÓN",
@@ -9,34 +10,48 @@ export const landing = {
   },
   product: {
     name: "EnzyCore 1500",
-    description:
-      "Fórmula lipolítica y reafirmante de alta concentración enzimática. Indicada para tratamientos de remodelación corporal y facial con enfoque técnico y resultados progresivos.",
-    features: [
-      {
-        id: "adiposa",
-        line1: "Designación",
-        line2: "Adiposa",
-        image: "/images/icons/designacion-adiposa.png",
-        imageAlt: "Icono designación adiposa",
-      },
-      {
-        id: "focalizar",
-        line1: "Focalizar el",
-        line2: "tratamiento",
-        image: "/images/icons/focalizar-tratamiento.png",
-        imageAlt: "Icono focalizar el tratamiento",
-      },
-      {
-        id: "protocolos",
-        line1: "Optimizar",
-        line2: "protocolos",
-        image: "/images/icons/optimizar-protocolos.png",
-        imageAlt: "Icono optimizar protocolos",
-      },
-    ],
-    footnote:
-      "*Desarrollado bajo un estricto criterio técnico y de alta especialización.",
+    tagline:
+      "Complejo enzimático diseñado para protocolos de aplicación localizada.",
+    composition: "Colagenasa. Hialuronidasa. Lipasa.",
+    presentation: "Vial 10 ml",
+    summary:
+      "Una combinación orientada a intervenir grasa localizada, facilitando tratamientos más dirigidos y controlados.",
+    enzymeAction: {
+      trigger: "Acción enzimática aplicada",
+      intro:
+        "Las enzimas actúan como catalizadores biológicos específicos en la zona de aplicación. En conjunto, esta formulación permite:",
+      bullets: [
+        "Actuar sobre el tejido graso localizado.",
+        "Facilitar la intervención en zonas específicas.",
+        "Integrarse de forma eficiente en protocolos de mesoterapia.",
+      ],
+      closing: "Todo bajo un enfoque técnico y profesional",
+    },
   },
+  /** Iconos para sección futura de ventajas competitivas */
+  competitiveAdvantages: [
+    {
+      id: "adiposa",
+      line1: "Designación",
+      line2: "Adiposa",
+      image: "/images/icons/designacion-adiposa.png",
+      imageAlt: "Icono designación adiposa",
+    },
+    {
+      id: "focalizar",
+      line1: "Focalizar el",
+      line2: "tratamiento",
+      image: "/images/icons/focalizar-tratamiento.png",
+      imageAlt: "Icono focalizar el tratamiento",
+    },
+    {
+      id: "protocolos",
+      line1: "Optimizar",
+      line2: "protocolos",
+      image: "/images/icons/optimizar-protocolos.png",
+      imageAlt: "Icono optimizar protocolos",
+    },
+  ],
   technical: {
     title: "Acciones específicas con enfoque técnico",
     subtitle:
@@ -92,7 +107,7 @@ export const landing = {
     title: "La evolución de la mesoterapia hacia la precisión",
     subtitle:
       "Para información sobre formulaciones, distribución autorizada o integración en tu protocolo, escríbenos. Un asesor te responderá personalmente.",
-    cta: "CONTACTAR POR CORREO",
+    cta: "Contactar por correo",
     email: "cristhofii@gmail.com",
   },
   footer: {

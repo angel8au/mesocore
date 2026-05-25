@@ -1,15 +1,16 @@
 import Image from "next/image";
 import { landing } from "@/content/landing";
 import { Container } from "@/components/ui/Container";
-import { ProductFeature } from "@/components/ui/ProductFeature";
+import { ProductEnzymeDetails } from "@/components/ui/ProductEnzymeDetails";
 
 export function ProductSection() {
-  const { name, description, features, footnote } = landing.product;
+  const { name, tagline, composition, presentation, summary, enzymeAction } =
+    landing.product;
 
   return (
     <section className="bg-mesocore-background py-16 md:py-24">
       <Container>
-        <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+        <div className="grid items-center gap-12 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:gap-14 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
           <div className="flex justify-center">
             <div className="relative aspect-[391/399] w-full max-w-[230px] lg:max-w-[390.34px]">
               <Image
@@ -23,27 +24,29 @@ export function ProductSection() {
               />
             </div>
           </div>
-          <div>
-            <h2 className="text-title-2 mb-4 text-mesocore-gray-900">
-              {name}
-            </h2>
-            <p className="mb-10 max-w-lg text-base leading-relaxed text-mesocore-gray-500">
-              {description}
+          <div className="md:max-w-none lg:max-w-2xl xl:max-w-3xl">
+            <h2 className="text-title-2 text-mesocore-gray-900">{name}</h2>
+            <p className="mt-4 text-base leading-relaxed text-mesocore-gray-900 md:text-lg">
+              {tagline}
             </p>
-            <div className="grid grid-cols-3 gap-6 sm:gap-8">
-              {features.map((feature) => (
-                <ProductFeature
-                  key={feature.id}
-                  imageSrc={feature.image}
-                  imageAlt={feature.imageAlt}
-                  line1={feature.line1}
-                  line2={feature.line2}
-                />
-              ))}
-            </div>
-            <p className="mt-8 text-left text-xs leading-relaxed text-mesocore-gray-500">
-              {footnote}
+            <dl className="mt-6 space-y-3 text-base leading-relaxed text-mesocore-gray-500 md:text-lg">
+              <div>
+                <dt className="font-semibold text-mesocore-gray-900">
+                  Composición:
+                </dt>
+                <dd>{composition}</dd>
+              </div>
+              <div>
+                <dt className="font-semibold text-mesocore-gray-900">
+                  Presentación:
+                </dt>
+                <dd>{presentation}</dd>
+              </div>
+            </dl>
+            <p className="mt-6 text-base leading-relaxed text-mesocore-gray-500 md:text-lg">
+              {summary}
             </p>
+            <ProductEnzymeDetails {...enzymeAction} />
           </div>
         </div>
       </Container>

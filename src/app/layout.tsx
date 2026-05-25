@@ -6,7 +6,7 @@ import { landing } from "@/content/landing";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin"],
-  weight: ["300"],
+  weight: ["300", "500"],
 });
 
 const rethinkSans = Rethink_Sans({
