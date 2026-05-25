@@ -4,6 +4,7 @@ import { TechnicalSection } from "@/components/sections/TechnicalSection";
 import { OriginSection } from "@/components/sections/OriginSection";
 import { ValuesSection } from "@/components/sections/ValuesSection";
 import { FinalCtaSection } from "@/components/sections/FinalCtaSection";
+import { ResponsibilitySection } from "@/components/sections/ResponsibilitySection";
 import { Footer } from "@/components/sections/Footer";
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <ValuesSection />
       <OriginSection />
       <TechnicalSection />
+      <ResponsibilitySection />
       <FinalCtaSection />
       <Footer />
     </main>

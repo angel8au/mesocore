@@ -1,5 +1,6 @@
 export const landing = {
   hero: {
+    modelImage: "/images/hero-model-v3.png",
     label: "FORMULACIONES EUROPEAS",
     title: "Mesoterapia avanzada con precisión científica",
     subtitle:
@@ -102,6 +103,16 @@ export const landing = {
         icon: "professional" as const,
       },
     ],
+  },
+  responsibility: {
+    title: "Estética + responsabilidad técnica",
+    intro: "Nuestro compromiso es con:",
+    commitments: [
+      "La calidad y los resultados.",
+      "El uso responsable dentro de protocolos profesionales.",
+      "El compromiso con la precisión en cada formulación.",
+    ],
+    modelImage: "/images/model-3.png",
   },
   finalCta: {
     title: "La evolución de la mesoterapia hacia la precisión",
