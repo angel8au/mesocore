@@ -1,236 +1,99 @@
-type IconProps = {
+import type { IconProps } from "@phosphor-icons/react";
+import {
+  ArrowsClockwise,
+  Asclepius,
+  CaretDown,
+  Crosshair,
+  Drop,
+  Flask,
+  FacebookLogo,
+  InstagramLogo,
+  ShieldCheck,
+  Sparkle,
+  Star,
+  Target,
+  Waves,
+} from "@phosphor-icons/react/ssr";
+import type { ComponentType } from "react";
+
+export const PHOSPHOR_ICON_SIZE = 24;
+export const PHOSPHOR_VALUE_ICON_SIZE = 32;
+export const PHOSPHOR_ICON_WEIGHT = "regular" as const;
+
+type MesocoreIconProps = {
   className?: string;
 };
 
-export function IconDroplet({ className = "w-8 h-8" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 32 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      aria-hidden
-    >
-      <path d="M16 4C16 4 8 14 8 20a8 8 0 0 0 16 0c0-6-8-16-8-16z" />
-    </svg>
-  );
-}
+type PhosphorIconComponent = ComponentType<IconProps>;
 
-export function IconWaves({ className = "w-8 h-8" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 32 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      aria-hidden
-    >
-      <path d="M4 16c4-4 8-4 12 0s8 4 12 0M4 22c4-4 8-4 12 0s8 4 12 0" />
-    </svg>
-  );
-}
-
-export function IconSparkle({ className = "w-8 h-8" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 32 32"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      aria-hidden
-    >
-      <path d="M16 4v8M16 20v8M4 16h8M20 16h8M7 7l5.5 5.5M19.5 19.5L25 25M25 7l-5.5 5.5M12.5 19.5L7 25" />
-    </svg>
-  );
-}
-
-/** Aplicación localizada — diana / zona específica */
-export function IconLocalized({ className = "w-10 h-10" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 40 40"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.25"
-      aria-hidden
-    >
-      <circle cx="20" cy="20" r="14" />
-      <circle cx="20" cy="20" r="8" />
-      <path d="M20 4v32M4 20h32" />
-      <circle cx="20" cy="20" r="2" fill="currentColor" stroke="none" />
-    </svg>
-  );
-}
-
-/** Integración en protocolos — ciclo / esquema */
-export function IconProtocols({ className = "w-10 h-10" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 40 40"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.25"
-      aria-hidden
-    >
-      <path
-        strokeLinecap="round"
-        d="M28 12a10 10 0 0 0-17.3-5M12 28a10 10 0 0 0 17.3 5"
+function createIcon(
+  PhosphorIcon: PhosphorIconComponent,
+  size: number = PHOSPHOR_ICON_SIZE,
+): ComponentType<MesocoreIconProps> {
+  function MesocoreIcon({ className }: MesocoreIconProps) {
+    return (
+      <PhosphorIcon
+        size={size}
+        weight={PHOSPHOR_ICON_WEIGHT}
+        className={className}
+        aria-hidden
       />
-      <path strokeLinecap="round" d="M8 16h6l2-6M32 24h-6l-2 6" />
-      <circle cx="20" cy="20" r="3" />
-      <path d="M20 17v6M17 20h6" strokeLinecap="round" />
-    </svg>
-  );
+    );
+  }
+
+  MesocoreIcon.displayName = PhosphorIcon.displayName ?? "MesocoreIcon";
+
+  return MesocoreIcon;
 }
 
-/** Formulación avanzada — pipeta */
-export function IconPipette({ className = "w-10 h-10" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 40 40"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.25"
-      aria-hidden
-    >
-      <path
-        strokeLinecap="round"
-        strokeLinejoin="round"
-        d="M14 6h12v6l-4 18H18L14 12V6z"
-      />
-      <path d="M16 10h8" />
-      <path strokeLinecap="round" d="M20 30v4" />
-      <circle cx="20" cy="35" r="1" fill="currentColor" />
-      <path
-        strokeLinecap="round"
-        d="M8 14c2-2 4-3 6-3M32 14c-2-2-4-3-6-3"
-        opacity="0.35"
-      />
-    </svg>
-  );
-}
+/** Valores — aplicación localizada */
+export const IconLocalized = createIcon(Crosshair, PHOSPHOR_VALUE_ICON_SIZE);
 
-/** Uso profesional exclusivo */
-export function IconProfessional({ className = "w-10 h-10" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 40 40"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.25"
-      aria-hidden
-    >
-      <circle cx="20" cy="12" r="5" />
-      <path strokeLinecap="round" d="M10 32c0-5.5 4.5-10 10-10s10 4.5 10 10" />
-      <rect x="16" y="22" width="8" height="6" rx="1" />
-      <path d="M18 25h4" strokeLinecap="round" />
-    </svg>
-  );
-}
+/** Valores — integración en protocolos */
+export const IconProtocols = createIcon(ArrowsClockwise, PHOSPHOR_VALUE_ICON_SIZE);
 
-export function IconQuality({ className = "size-6" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <path d="m12 3 2.45 5.55L20 9.5l-4 4.05.95 5.95L12 16.7 7.05 19.5 8 13.55 4 9.5l5.55-.95L12 3Z" />
-    </svg>
-  );
-}
+/** Valores — formulación avanzada */
+export const IconPipette = createIcon(Flask, PHOSPHOR_VALUE_ICON_SIZE);
 
-export function IconShield({ className = "size-6" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <path d="M12 3 5 6v6c0 4 3 7.5 7 9 4-1.5 7-5 7-9V6l-7-3Z" />
-      <path d="m9 12 2 2 4-4" />
-    </svg>
-  );
-}
+/** Valores — uso profesional */
+export const IconProfessional = createIcon(Asclepius, PHOSPHOR_VALUE_ICON_SIZE);
 
-export function IconPrecision({ className = "size-6" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <circle cx="12" cy="12" r="9" />
-      <circle cx="12" cy="12" r="5" />
-      <circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none" />
-    </svg>
-  );
-}
+/** Compromisos — calidad */
+export const IconQuality = createIcon(Star);
 
-export function IconChevronDown({ className = "size-6" }: IconProps) {
-  return (
-    <svg
-      className={className}
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden
-    >
-      <path d="M6 9l6 6 6-6" />
-    </svg>
-  );
-}
+/** Compromisos — uso responsable */
+export const IconShield = createIcon(ShieldCheck);
 
-export function IconFacebook({ className = "w-5 h-5" }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-      <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
-    </svg>
-  );
-}
+/** Compromisos — precisión */
+export const IconPrecision = createIcon(Target);
 
-export function IconInstagram({ className = "w-5 h-5" }: IconProps) {
-  return (
-    <svg className={className} viewBox="0 0 24 24" fill="currentColor" aria-hidden>
-      <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
-    </svg>
-  );
-}
+/** UI — acordeón */
+export const IconChevronDown = createIcon(CaretDown);
 
-export const productIcons = {
-  droplet: IconDroplet,
-  waves: IconWaves,
-  sparkle: IconSparkle,
-} as const;
+/** Footer — redes */
+export const IconFacebook = createIcon(FacebookLogo);
+export const IconInstagram = createIcon(InstagramLogo);
+
+/** Producto (legacy) */
+export const IconDroplet = createIcon(Drop);
+export const IconWaves = createIcon(Waves);
+export const IconSparkle = createIcon(Sparkle);
 
 export const valueIcons = {
   localized: IconLocalized,
   protocols: IconProtocols,
   pipette: IconPipette,
   professional: IconProfessional,
+} as const;
+
+export const commitmentIcons = {
+  quality: IconQuality,
+  shield: IconShield,
+  precision: IconPrecision,
+} as const;
+
+export const productIcons = {
+  droplet: IconDroplet,
+  waves: IconWaves,
+  sparkle: IconSparkle,
 } as const;

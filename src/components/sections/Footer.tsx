@@ -45,7 +45,7 @@ export function Footer() {
           </div>
         </div>
 
-        <div className="border-t border-mesocore-gray-100 pt-6 text-center text-xs text-mesocore-gray-500">
+        <div className="border-t-1 border-[#B97C4B] pt-6 text-center text-xs text-mesocore-gray-500">
           <p>{copyright}</p>
           <p className="mt-1">{legal}</p>
         </div>

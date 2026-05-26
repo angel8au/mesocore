@@ -8,6 +8,8 @@
   --mesocore-primary-hover: #273d44;
   --mesocore-primary-muted: #4a6b74;
   --mesocore-primary-subtle: #e8edef;
+  --mesocore-primary-button-highlight: #4a6b74;
+  --mesocore-primary-button-shadow: 39 61 68;
 
   /* Brand — accent (copper, mockup CTAs) */
   --mesocore-accent: #A26839;
@@ -16,6 +18,7 @@
 
   /* Neutrals */
   --mesocore-background: #dadcdc;
+  --mesocore-surface-light: #e2e4e4;
   --mesocore-hero-height: 768px;
   --mesocore-black: #0a0a0a;
   --mesocore-hero-base: var(--mesocore-accent);
@@ -36,6 +39,7 @@
 
   /* Semantic aliases */
   --background: var(--mesocore-background);
+  --background-subtle: var(--mesocore-surface-light);
   --foreground: var(--mesocore-gray-900);
   --color-primary: var(--mesocore-primary);
   --color-primary-hover: var(--mesocore-primary-hover);
@@ -101,6 +105,7 @@
   --color-copper-dark: var(--mesocore-accent-hover);
 
   --color-mesocore-background: var(--mesocore-background);
+  --color-mesocore-background-subtle: var(--background-subtle);
   --height-hero: var(--mesocore-hero-height);
   --color-mesocore-black: var(--mesocore-black);
   --color-mesocore-hero-base: var(--mesocore-hero-base);
@@ -219,5 +224,5 @@ h6 {
 }
 
 .gradient-technical {
-  background: var(--mesocore-pearl);
+  background: var(--background-subtle);
 }

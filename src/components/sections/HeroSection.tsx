@@ -17,7 +17,7 @@ export function HeroSection() {
           <h1 className="text-title-1 text-pretty break-words text-white text-[clamp(1.625rem,10cqi,4.25rem)] leading-[1.1]">
             {title}
           </h1>
-          <p className="text-eyebrow text-eyebrow-on-dark">{label}</p>
+          <p className="text-eyebrow text-eyebrow-on-dark mt-3">{label}</p>
           <p className="max-w-prose text-base leading-relaxed text-mesocore-pearl md:text-[0.95rem] md:leading-relaxed lg:text-[1.0625rem]">
             {subtitle}
           </p>

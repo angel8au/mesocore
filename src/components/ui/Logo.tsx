@@ -4,10 +4,10 @@ import Image from "next/image";
 export const LOGO_WIDTH = 232;
 export const LOGO_HEIGHT = 32;
 
-type LogoVariant = "light" | "primary";
+type LogoVariant = "light" | "primary" | "text";
 
 type LogoProps = {
-  /** light = blanco (hero/fondos oscuros), primary = #314C54 */
+  /** light = blanco, primary = #314C54, text = #3A3F42 (cuerpo) */
   variant?: LogoVariant;
   className?: string;
 };
@@ -15,6 +15,7 @@ type LogoProps = {
 const LOGO_SOURCES: Record<LogoVariant, string> = {
   light: "/logo-white.svg",
   primary: "/logo-primary.svg",
+  text: "/logo-text.svg",
 };
 
 export function Logo({ variant = "primary", className = "" }: LogoProps) {

@@ -24,7 +24,7 @@ export function ProductEnzymeDetails({
     <details className="group mt-8 overflow-hidden rounded-sm border border-mesocore-border-secondary transition-colors hover:border-primary hover:bg-primary-subtle/40">
       <summary className="group/summary text-actionable text-actionable-on-light flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-4 text-left text-base transition-colors hover:text-primary-hover md:px-5 md:text-lg [&::-webkit-details-marker]:hidden">
         <span>{trigger}</span>
-        <IconChevronDown className="size-6 shrink-0 text-primary transition-[transform,color] duration-200 group-open:rotate-180 group-hover/summary:text-primary-hover" />
+        <IconChevronDown className="shrink-0 text-primary transition-[transform,color] duration-200 group-open:rotate-180 group-hover/summary:text-primary-hover" />
       </summary>
       <div className="space-y-6 border-t border-mesocore-border-secondary px-4 pb-6 pt-5 text-base leading-relaxed text-mesocore-text-secondary md:px-6 md:pb-8 md:pt-6 md:text-lg">
         <p>{intro}</p>
@@ -32,7 +32,7 @@ export function ProductEnzymeDetails({
           {bullets.map((item) => (
             <li
               key={item.text}
-              className="flex flex-col items-center gap-3 text-center text-sm md:text-base"
+              className="flex flex-col items-start gap-3 text-left text-sm md:text-base"
             >
               <div className="relative h-16 w-16 md:h-20 md:w-20">
                 <Image
