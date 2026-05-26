@@ -11,20 +11,29 @@ export const landing = {
   },
   product: {
     name: "EnzyCore 1500",
-    tagline:
-      "Complejo enzimático diseñado para protocolos de aplicación localizada.",
-    composition: "Colagenasa. Hialuronidasa. Lipasa.",
-    presentation: "Vial 10 ml",
-    summary:
-      "Una combinación orientada a intervenir grasa localizada, facilitando tratamientos más dirigidos y controlados.",
+    metaLine: "COLAGENASA. HIALURONIDASA. LIPASA - VIAL 10 ML",
+    body:
+      "Complejo enzimático diseñado para protocolos de aplicación específica. Una combinación orientada a intervenir la grasa localizada, facilitando tratamientos más dirigidos y controlados.",
     enzymeAction: {
       trigger: "Acción enzimática aplicada",
       intro:
         "Las enzimas actúan como catalizadores biológicos específicos en la zona de aplicación. En conjunto, esta formulación permite:",
       bullets: [
-        "Actuar sobre el tejido graso localizado.",
-        "Facilitar la intervención en zonas específicas.",
-        "Integrarse de forma eficiente en protocolos de mesoterapia.",
+        {
+          icon: "/images/icons/icon1.png",
+          iconAlt: "Icono actuar sobre tejido graso localizado",
+          text: "Actuar sobre el tejido graso localizado.",
+        },
+        {
+          icon: "/images/icons/icon2.png",
+          iconAlt: "Icono facilitar la intervención en zonas específicas",
+          text: "Facilitar la intervención en zonas específicas.",
+        },
+        {
+          icon: "/images/icons/icon3.png",
+          iconAlt: "Icono integrarse en protocolos de mesoterapia",
+          text: "Integrarse de forma eficiente en protocolos de mesoterapia.",
+        },
       ],
       closing: "Todo bajo un enfoque técnico y profesional",
     },
@@ -108,11 +117,17 @@ export const landing = {
     title: "Estética + responsabilidad técnica",
     intro: "Nuestro compromiso es con:",
     commitments: [
-      "La calidad y los resultados.",
-      "El uso responsable dentro de protocolos profesionales.",
-      "El compromiso con la precisión en cada formulación.",
+      { icon: "quality" as const, text: "La calidad y los resultados." },
+      {
+        icon: "shield" as const,
+        text: "El uso responsable dentro de protocolos profesionales.",
+      },
+      {
+        icon: "precision" as const,
+        text: "El compromiso con la precisión en cada formulación.",
+      },
     ],
-    modelImage: "/images/model-3.png",
+    modelImage: "/images/model-v3.png",
   },
   finalCta: {
     title: "La evolución de la mesoterapia hacia la precisión",
@@ -124,8 +139,8 @@ export const landing = {
   footer: {
     copyright: "© 2026 MESOCORE. Todos los derechos reservados.",
     legal: "Uso exclusivo profesional.",
-    termsLabel: "Términos y condiciones",
-    termsHref: "/terminos-y-condiciones",
+    termsLabel: "Aviso de privacidad",
+    termsHref: "/aviso-de-privacidad",
   },
   metadata: {
     title: "MESOCORE | Estética aplicada con inteligencia",
