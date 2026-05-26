@@ -3,6 +3,7 @@ import Link from "next/link";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { Footer } from "@/components/sections/Footer";
+import { contactEmail } from "@/content/landing";
 
 export const metadata: Metadata = {
   title: "Aviso de privacidad | MESOCORE",
@@ -60,7 +61,7 @@ export default function PrivacyNoticePage() {
                     <strong className="font-semibold text-mesocore-gray-900">
                       Correo electrónico de contacto:
                     </strong>{" "}
-                    cristhofii@gmail.com
+                    {contactEmail}
                   </li>
                 </ul>
               </div>
@@ -135,7 +136,7 @@ export default function PrivacyNoticePage() {
                   que sus datos personales sean tratados para estas finalidades secundarias,
                   puede manifestar su negativa enviando un correo electrónico a{" "}
                   <strong className="font-semibold text-mesocore-gray-900">
-                    cristhofii@gmail.com
+                    {contactEmail}
                   </strong>{" "}
                   indicando en el asunto: <em>"Negativa Tratamiento Secundario"</em>.
                 </p>
@@ -152,7 +153,7 @@ export default function PrivacyNoticePage() {
                 Usted puede limitar el uso o divulgación de sus datos personales enviando
                 una solicitud por escrito al correo electrónico{" "}
                 <strong className="font-semibold text-mesocore-gray-900">
-                  cristhofii@gmail.com
+                  {contactEmail}
                 </strong>
                 . Asimismo, para dejar de recibir correos electrónicos publicitarios o
                 boletines informativos, cada mensaje enviado contará con un enlace automático
@@ -186,7 +187,7 @@ export default function PrivacyNoticePage() {
                   Para el ejercicio de cualquiera de los Derechos ARCO, usted deberá
                   presentar la solicitud respectiva a través del correo electrónico:{" "}
                   <strong className="font-semibold text-mesocore-gray-900">
-                    cristhofii@gmail.com
+                    {contactEmail}
                   </strong>
                   .
                 </p>

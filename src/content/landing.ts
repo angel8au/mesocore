@@ -1,4 +1,8 @@
+/** Correo de contacto único — actualizar aquí para todo el sitio */
+export const contactEmail = "soporte@mesocore.mx";
+
 export const landing = {
+  contactEmail,
   hero: {
     modelImage: "/images/hero-model-v4.png",
     label: "FORMULACIONES EUROPEAS",
@@ -134,7 +138,6 @@ export const landing = {
     subtitle:
       "Para información sobre formulaciones, distribución autorizada o integración en tu protocolo, escríbenos. Un asesor te responderá personalmente.",
     cta: "Contactar por correo",
-    email: "cristhofii@gmail.com",
   },
   footer: {
     copyright: "© 2026 MESOCORE. Todos los derechos reservados.",
