@@ -26,7 +26,7 @@ export function ProductSection() {
           </div>
           <div className="md:max-w-none lg:max-w-2xl xl:max-w-3xl">
             <h2 className="text-title-2 text-mesocore-gray-900">{name}</h2>
-            <p className="mt-4 text-base leading-relaxed text-mesocore-gray-900 md:text-lg">
+            <p className="mt-4 text-base leading-relaxed text-mesocore-gray-500 md:text-lg">
               {tagline}
             </p>
             <dl className="mt-6 space-y-3 text-base leading-relaxed text-mesocore-gray-500 md:text-lg">

@@ -1,6 +1,6 @@
 export const landing = {
   hero: {
-    modelImage: "/images/hero-model-v3.png",
+    modelImage: "/images/hero-model-v4.png",
     label: "FORMULACIONES EUROPEAS",
     title: "Mesoterapia avanzada con precisión científica",
     subtitle:
@@ -78,7 +78,7 @@ export const landing = {
         id: "localized",
         title: "Aplicación localizada",
         description:
-          "Diseñado exclusivamente para actuar de forma directa sobre zonas críticas específicas.",
+          "Diseñado exclusivamente para actuar de forma directa sobre zonas específicas.",
         icon: "localized" as const,
       },
       {

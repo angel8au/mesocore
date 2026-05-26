@@ -16,7 +16,7 @@
 
   /* Neutrals */
   --mesocore-background: #dadcdc;
-  --mesocore-hero-height: 920px;
+  --mesocore-hero-height: 768px;
   --mesocore-black: #0a0a0a;
   --mesocore-hero-base: var(--mesocore-accent);
   --mesocore-pearl: #dadcdc;
@@ -57,7 +57,8 @@
   --font-family-title: var(--font-inter), system-ui, sans-serif;
 
   /* Typography — title scale */
-  --text-title-1: 39px;
+  /* title-1: fluido 36px → 68px entre 320px y 1440px de viewport */
+  --text-title-1: clamp(2.25rem, 1.68rem + 2.86vw, 4.25rem);
   --text-title-1-line-height: 1.1;
   --text-title-2: 36px;
   --text-title-2-line-height: 1.1;
@@ -65,9 +66,17 @@
   --text-title-3-line-height: 1.2;
 }
 
+/* Tablet — 768px to 1023px */
 @media (min-width: 768px) {
   :root {
-    --text-title-1: 68px;
+    --text-title-2: 36px;
+    --text-title-3: 20px;
+  }
+}
+
+/* Desktop — 1024px and up */
+@media (min-width: 1024px) {
+  :root {
     --text-title-2: 48px;
     --text-title-3: 20px;
   }
@@ -193,9 +202,20 @@ h6 {
 .hero-section {
   position: relative;
   overflow: hidden;
-  height: var(--mesocore-hero-height);
-  min-height: var(--mesocore-hero-height);
+  min-height: 640px;
   background-color: var(--mesocore-accent);
+}
+
+@media (min-width: 768px) {
+  .hero-section {
+    min-height: 680px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero-section {
+    min-height: 720px;
+  }
 }
 
 .gradient-technical {

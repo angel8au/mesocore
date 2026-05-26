@@ -14,7 +14,7 @@ export function OriginSection() {
   return (
     <section className="overflow-hidden bg-primary">
       <Container className="pb-0">
-        <div className="grid min-h-[480px] gap-2 md:grid-cols-[minmax(0,1.2fr)_minmax(0,0.8fr)] md:min-h-[520px] md:gap-10 lg:min-h-[560px] lg:grid-cols-[minmax(0,1.25fr)_minmax(0,0.75fr)] lg:gap-16">
+        <div className="grid min-h-[480px] gap-2 md:grid-cols-[minmax(0,0.95fr)_minmax(0,1.05fr)] md:min-h-[520px] md:gap-10 lg:min-h-[560px] lg:grid-cols-[minmax(0,1fr)_minmax(0,1fr)] lg:gap-16">
           <div className="flex w-full max-w-xl flex-col justify-center pt-12 pb-0 md:max-w-none md:pe-8 lg:py-16 lg:pe-12">
             <p className="text-eyebrow text-eyebrow-on-dark mb-3">{label}</p>
             <h2 className="text-title-2 text-white">
@@ -29,14 +29,14 @@ export function OriginSection() {
             </p>
           </div>
 
-          <div className="flex min-h-[300px] items-end justify-center lg:min-h-0 lg:h-full lg:justify-end">
-            <div className="relative h-full w-full max-w-lg">
+          <div className="flex min-h-[300px] items-end justify-center md:min-h-0 md:h-full md:justify-end">
+            <div className="relative h-full w-full max-w-lg md:max-w-none">
               <Image
-                src="/images/mode-origen.png"
+                src="/images/modelo-origen-v2.png"
                 alt="Modelo en sección de formulación de origen europeo MESOCORE"
                 fill
-                className="object-contain object-bottom"
-                sizes="(max-width: 1024px) 100vw, 50vw"
+                className="object-contain object-bottom md:object-right-bottom"
+                sizes="(max-width: 767px) 100vw, (max-width: 1023px) 55vw, 50vw"
               />
             </div>
           </div>
