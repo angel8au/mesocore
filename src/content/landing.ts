@@ -4,7 +4,7 @@ export const contactEmail = "soporte@mesocore.mx";
 export const landing = {
   contactEmail,
   hero: {
-    modelImage: "/images/hero-model-v4.png",
+    modelImage: "/images/hero-model-v5.png",
     label: "FORMULACIONES EUROPEAS",
     title: "Mesoterapia avanzada con precisión científica",
     subtitle:

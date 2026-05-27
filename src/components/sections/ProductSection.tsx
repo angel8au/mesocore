@@ -13,7 +13,7 @@ export function ProductSection() {
           <div className="flex justify-center md:justify-start">
             <div className="relative aspect-[391/399] w-full max-w-[230px] lg:max-w-[390.34px]">
               <Image
-                src="/images/product-vials.png"
+                src="/images/product-mesocore.png"
                 alt="Tres viales EnzyCore 1500 de MESOCORE con etiqueta Enzimas Cocktail"
                 width={391}
                 height={399}
