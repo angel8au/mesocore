@@ -16,6 +16,10 @@
   --mesocore-accent-hover: #9D6639;
   --mesocore-accent-subtle: #f5ebe4;
 
+  /* Coming soon ribbon */
+  --mesocore-ribbon-bg: #e2cdbd;
+  --mesocore-ribbon-text: #784d2b;
+
   /* Neutrals */
   --mesocore-background: #dadcdc;
   --mesocore-surface-light: #e2e4e4;
@@ -45,6 +49,8 @@
   --color-primary-hover: var(--mesocore-primary-hover);
   --color-accent: var(--mesocore-accent);
   --color-accent-hover: var(--mesocore-accent-hover);
+  --badge-coming-soon-background: var(--mesocore-ribbon-bg);
+  --badge-coming-soon-foreground: var(--mesocore-ribbon-text);
 
   /* Legacy aliases (migrate gradually) */
   --color-copper: var(--mesocore-accent);
@@ -100,6 +106,11 @@
   --color-accent: var(--mesocore-accent);
   --color-accent-hover: var(--mesocore-accent-hover);
   --color-accent-subtle: var(--mesocore-accent-subtle);
+
+  --color-mesocore-ribbon-bg: var(--mesocore-ribbon-bg);
+  --color-mesocore-ribbon-text: var(--mesocore-ribbon-text);
+  --color-badge-coming-soon-bg: var(--badge-coming-soon-background);
+  --color-badge-coming-soon-fg: var(--badge-coming-soon-foreground);
 
   --color-copper: var(--mesocore-accent);
   --color-copper-dark: var(--mesocore-accent-hover);

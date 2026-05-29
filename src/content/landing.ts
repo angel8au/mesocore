@@ -133,6 +133,45 @@ export const landing = {
     ],
     modelImage: "/images/model-v3.png",
   },
+  innovations: {
+    label: "INNOVACIONES EN DESARROLLO:",
+    title: "El Futuro de MesoCORE",
+    badge: "PROXIMAMENTE",
+    items: [
+      {
+        id: "exosomas-capilares",
+        name: "Exosomas capilares",
+        description:
+          "Combinación de exosomas que previenen la caída del cabello y mejora su densidad.",
+        image: "/images/exosomas-capilares.png",
+        imageAlt: "Ilustración de exosomas capilares MESOCORE",
+      },
+      {
+        id: "eye-contour",
+        name: "Eye Contour",
+        description:
+          "Combinación de activos que promueven la hidratación, disminuye las arrugas y mejora la elasticidad del contorno de los ojos.",
+        image: "/images/eye-contour.png",
+        imageAlt: "Ilustración de Eye Contour MESOCORE",
+      },
+      {
+        id: "glow-boost",
+        name: "Glow boost",
+        description:
+          "Combinación de activos potenciadores de la hidratación natural de la piel. Es una sinergia de vitaminas, aminoácidos, antioxidantes y ácido hialurónico con el fin de rejuvenecer la piel.",
+        image: "/images/glow-boost.png",
+        imageAlt: "Ilustración de Glow boost MESOCORE",
+      },
+      {
+        id: "acido-mandelico",
+        name: "Ácido mandélico",
+        description:
+          "Peeling que combina los beneficios del ácido mandélico y el peróxido de hidrógeno. Despigmentante e inhibidor de la melanina.",
+        image: "/images/acido-mandelico.png",
+        imageAlt: "Ilustración de ácido mandélico MESOCORE",
+      },
+    ],
+  },
   finalCta: {
     title: "La evolución de la mesoterapia hacia la precisión",
     subtitle:
