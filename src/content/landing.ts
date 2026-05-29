@@ -76,6 +76,8 @@ export const landing = {
   origin: {
     label: "CRITERIO CLÍNICO",
     title: "Formulación de origen europeo",
+    modelImage: "/images/model-hombre.png",
+    modelImageAlt: "Modelo en sección de formulación de origen europeo MESOCORE",
     descriptionBefore:
       "Nuestros productos se desarrollan bajo estándares que priorizan la precisión en cada activo, ofreciendo la máxima confiabilidad en entornos clínicos. Guiados por el ",
     descriptionBold: "rigor y el criterio técnico",
@@ -143,7 +145,7 @@ export const landing = {
         name: "Exosomas capilares",
         description:
           "Combinación de exosomas que previenen la caída del cabello y mejora su densidad.",
-        image: "/images/exosomas-capilares.png",
+        image: "/images/innovation-vial.svg",
         imageAlt: "Ilustración de exosomas capilares MESOCORE",
       },
       {
@@ -151,7 +153,7 @@ export const landing = {
         name: "Eye Contour",
         description:
           "Combinación de activos que promueven la hidratación, disminuye las arrugas y mejora la elasticidad del contorno de los ojos.",
-        image: "/images/eye-contour.png",
+        image: "/images/innovation-vial.svg",
         imageAlt: "Ilustración de Eye Contour MESOCORE",
       },
       {
@@ -159,7 +161,7 @@ export const landing = {
         name: "Glow boost",
         description:
           "Combinación de activos potenciadores de la hidratación natural de la piel. Es una sinergia de vitaminas, aminoácidos, antioxidantes y ácido hialurónico con el fin de rejuvenecer la piel.",
-        image: "/images/glow-boost.png",
+        image: "/images/innovation-vial.svg",
         imageAlt: "Ilustración de Glow boost MESOCORE",
       },
       {
@@ -167,7 +169,7 @@ export const landing = {
         name: "Ácido mandélico",
         description:
           "Peeling que combina los beneficios del ácido mandélico y el peróxido de hidrógeno. Despigmentante e inhibidor de la melanina.",
-        image: "/images/acido-mandelico.png",
+        image: "/images/innovation-vial.svg",
         imageAlt: "Ilustración de ácido mandélico MESOCORE",
       },
     ],

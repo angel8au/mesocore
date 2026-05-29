@@ -72,15 +72,14 @@
   --text-title-1-line-height: 1.1;
   --text-title-2: 36px;
   --text-title-2-line-height: 1.1;
-  --text-title-3: 24px;
-  --text-title-3-line-height: 1.2;
+  --mesocore-title-3-size: 20px;
+  --mesocore-title-3-line-height: 1.2;
 }
 
 /* Tablet — 768px to 1023px */
 @media (min-width: 768px) {
   :root {
     --text-title-2: 36px;
-    --text-title-3: 20px;
   }
 }
 
@@ -88,7 +87,7 @@
 @media (min-width: 1024px) {
   :root {
     --text-title-2: 48px;
-    --text-title-3: 20px;
+    --mesocore-title-3-size: 24px;
   }
 }
 
@@ -138,7 +137,6 @@
 
   --font-size-title-1: var(--text-title-1);
   --font-size-title-2: var(--text-title-2);
-  --font-size-title-3: var(--text-title-3);
 }
 
 /* ─── Base ───────────────────────────────────────────────────────────────── */
@@ -180,8 +178,8 @@ h6 {
 }
 
 .text-title-3 {
-  font-size: var(--text-title-3);
-  line-height: var(--text-title-3-line-height);
+  font-size: var(--mesocore-title-3-size);
+  line-height: var(--mesocore-title-3-line-height);
 }
 
 .text-eyebrow {

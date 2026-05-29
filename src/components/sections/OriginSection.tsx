@@ -6,6 +6,8 @@ export function OriginSection() {
   const {
     label,
     title,
+    modelImage,
+    modelImageAlt,
     descriptionBefore,
     descriptionBold,
     descriptionAfter,
@@ -32,8 +34,8 @@ export function OriginSection() {
           <div className="-mt-2 flex min-h-[280px] items-end justify-center md:mt-0 md:min-h-0 md:h-full md:justify-end">
             <div className="relative h-full w-full max-w-lg md:max-w-none">
               <Image
-                src="/images/modelo-origen-v2.png"
-                alt="Modelo en sección de formulación de origen europeo MESOCORE"
+                src={modelImage}
+                alt={modelImageAlt}
                 fill
                 className="object-contain object-bottom md:object-right-bottom"
                 sizes="(max-width: 767px) 100vw, (max-width: 1023px) 55vw, 50vw"
