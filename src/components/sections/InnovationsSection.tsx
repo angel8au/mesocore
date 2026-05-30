@@ -6,7 +6,7 @@ export function InnovationsSection() {
   const { label, title, badge, items } = landing.innovations;
 
   return (
-    <section className="bg-mesocore-background-subtle py-10 md:py-24">
+    <section className="bg-background py-10 md:py-24">
       <Container>
         <div className="mx-auto mb-8 max-w-3xl text-center md:mb-14">
           <p className="text-eyebrow text-[0.8125rem] tracking-[0.18em] text-mesocore-gray-500 md:text-base md:tracking-[0.2em]">
@@ -19,7 +19,7 @@ export function InnovationsSection() {
           {items.map((item) => (
             <li
               key={item.id}
-              className="relative flex flex-col rounded-sm bg-mesocore-background"
+              className="relative flex flex-col rounded-sm bg-surface"
             >
               <span className="absolute left-1/2 top-0 z-10 -translate-x-1/2 -translate-y-1/2 rounded-sm bg-badge-coming-soon-bg px-1.5 py-px text-[0.5625rem] font-medium uppercase tracking-[0.12em] text-badge-coming-soon-fg md:px-2 md:py-0.5 md:text-[0.625rem] md:tracking-[0.14em] lg:px-3 lg:py-1 lg:text-[0.6875rem] lg:tracking-[0.16em]">
                 {badge}

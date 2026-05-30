@@ -8,7 +8,7 @@ export function Footer() {
   const { copyright, legal, termsLabel, termsHref } = landing.footer;
 
   return (
-    <footer className="border-t border-mesocore-gray-100 bg-mesocore-background py-8 md:py-10">
+    <footer className="border-t border-mesocore-gray-100 bg-surface py-8 md:py-10">
       <Container className="flex flex-col">
         <div className="grid grid-cols-1 items-center gap-6 pb-8 md:grid-cols-3 md:pb-10">
           {/* Móvil: logo → redes → términos */}

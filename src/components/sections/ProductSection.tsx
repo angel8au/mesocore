@@ -7,7 +7,7 @@ export function ProductSection() {
   const { name, metaLine, body, enzymeAction } = landing.product;
 
   return (
-    <section className="bg-mesocore-background-subtle py-16 md:py-24">
+    <section className="bg-background py-16 md:py-24">
       <Container>
         <div className="grid items-start gap-12 md:grid-cols-[minmax(0,0.85fr)_minmax(0,1.15fr)] md:gap-14 lg:grid-cols-[minmax(0,0.8fr)_minmax(0,1.2fr)] lg:gap-20">
           <div className="flex justify-center md:justify-start">

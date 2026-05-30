@@ -8,7 +8,7 @@ export function FinalCtaSection() {
   const { contactEmail } = landing;
 
   return (
-    <section className="bg-mesocore-background-subtle py-16 md:py-24">
+    <section className="bg-background py-16 md:py-24">
       <Container className="flex flex-col items-center text-center">
         <SectionHeading title={title} subtitle={subtitle} align="center" />
         <div className="mt-10 flex w-full justify-center">

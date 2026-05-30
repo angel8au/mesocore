@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 export default function PrivacyNoticePage() {
   return (
-    <div className="flex min-h-screen flex-col bg-mesocore-background">
+    <div className="flex min-h-screen flex-col bg-surface">
       <header className="border-b border-mesocore-gray-100 py-8">
         <Container>
           <Link href="/" className="inline-block">

@@ -144,7 +144,7 @@ export const landing = {
         id: "exosomas-capilares",
         name: "Exosomas capilares",
         description:
-          "Combinación de exosomas que previenen la caída del cabello y mejora su densidad.",
+          "Combinación de exosomas que promueven el crecimiento y densidad del cabello, además de controlar su caída.",
         image: "/images/innovation-vial.svg",
         imageAlt: "Ilustración de exosomas capilares MESOCORE",
       },
@@ -152,7 +152,7 @@ export const landing = {
         id: "eye-contour",
         name: "Eye Contour",
         description:
-          "Combinación de activos que promueven la hidratación, disminuye las arrugas y mejora la elasticidad del contorno de los ojos.",
+          "Combinación de activos para disminuir arrugas y mejorar elasticidad e hidratación del contorno de los ojos.",
         image: "/images/innovation-vial.svg",
         imageAlt: "Ilustración de Eye Contour MESOCORE",
       },
@@ -160,7 +160,7 @@ export const landing = {
         id: "glow-boost",
         name: "Glow boost",
         description:
-          "Combinación de activos potenciadores de la hidratación natural de la piel. Es una sinergia de vitaminas, aminoácidos, antioxidantes y ácido hialurónico con el fin de rejuvenecer la piel.",
+          "Es una sinergia potencializada de vitaminas, aminoácidos, antioxidantes y ácido hialurónico para regenerar y mejorar la piel.",
         image: "/images/innovation-vial.svg",
         imageAlt: "Ilustración de Glow boost MESOCORE",
       },
@@ -168,7 +168,7 @@ export const landing = {
         id: "acido-mandelico",
         name: "Ácido mandélico",
         description:
-          "Peeling que combina los beneficios del ácido mandélico y el peróxido de hidrógeno. Despigmentante e inhibidor de la melanina.",
+          "Peeling despigmentante para mejorar el tono y calidad de la piel. Ayuda en la reducción de manchas e imperfecciones.",
         image: "/images/innovation-vial.svg",
         imageAlt: "Ilustración de ácido mandélico MESOCORE",
       },

@@ -8,7 +8,7 @@ export default function manifest(): MetadataRoute.Manifest {
       "Mesoterapia de precisión con formulaciones de origen europeo.",
     start_url: "/",
     display: "standalone",
-    background_color: "#dadcdc",
+    background_color: "#e2e4e4",
     theme_color: "#314c54",
     icons: [
       {

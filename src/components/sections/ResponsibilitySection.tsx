@@ -7,7 +7,7 @@ export function ResponsibilitySection() {
   const { title, intro, commitments, modelImage } = landing.responsibility;
 
   return (
-    <section className="overflow-hidden bg-mesocore-background">
+    <section className="overflow-hidden bg-surface">
       <Container className="pb-0">
         <div className="grid grid-cols-1 items-center gap-8 pt-12 md:grid-cols-[minmax(0,1.1fr)_minmax(0,0.9fr)] md:min-h-[520px] md:gap-10 md:pt-0 lg:grid-cols-[minmax(0,1.15fr)_minmax(0,0.85fr)] lg:min-h-[560px] lg:gap-16">
           <div className="flex flex-col justify-center md:py-12 md:pe-8 lg:py-16 lg:pe-12">
