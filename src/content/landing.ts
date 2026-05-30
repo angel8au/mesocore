@@ -137,7 +137,7 @@ export const landing = {
   },
   innovations: {
     label: "INNOVACIONES EN DESARROLLO:",
-    title: "El Futuro de MesoCORE",
+    title: "El Futuro de MESOCORE",
     badge: "PROXIMAMENTE",
     items: [
       {
