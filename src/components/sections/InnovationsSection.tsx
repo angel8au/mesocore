@@ -36,8 +36,15 @@ export function InnovationsSection() {
                 </div>
               </div>
               <div className="flex flex-1 flex-col px-2 pb-3 pt-0 md:px-3 md:pb-4 md:pt-1 lg:px-5 lg:pb-6 lg:pt-2">
-                <h3 className="text-title-3 text-center text-mesocore-gray-900">
-                  {item.name}
+                <h3 className="text-title-3 text-center leading-snug text-mesocore-gray-900">
+                  <span className="md:hidden">
+                    {item.titleLine1}
+                    <br />
+                    {item.titleLine2}
+                  </span>
+                  <span className="hidden md:inline">
+                    {item.titleLine1} {item.titleLine2}
+                  </span>
                 </h3>
                 <p className="mt-2 text-base leading-relaxed text-mesocore-gray-500 max-md:mt-1.5 max-md:text-[0.6875rem] max-md:leading-snug lg:mt-3">
                   {item.description}

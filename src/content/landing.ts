@@ -142,7 +142,8 @@ export const landing = {
     items: [
       {
         id: "exosomas-capilares",
-        name: "Exosomas capilares",
+        titleLine1: "Exosomas",
+        titleLine2: "capilares",
         description:
           "Combinación de exosomas que promueven el crecimiento y densidad del cabello, además de controlar su caída.",
         image: "/images/innovation-vial.svg",
@@ -150,7 +151,8 @@ export const landing = {
       },
       {
         id: "eye-contour",
-        name: "Eye Contour",
+        titleLine1: "Eye",
+        titleLine2: "Contour",
         description:
           "Combinación de activos para disminuir arrugas y mejorar elasticidad e hidratación del contorno de los ojos.",
         image: "/images/innovation-vial.svg",
@@ -158,7 +160,8 @@ export const landing = {
       },
       {
         id: "glow-boost",
-        name: "Glow boost",
+        titleLine1: "Glow",
+        titleLine2: "boost",
         description:
           "Es una sinergia potencializada de vitaminas, aminoácidos, antioxidantes y ácido hialurónico para regenerar y mejorar la piel.",
         image: "/images/innovation-vial.svg",
@@ -166,7 +169,8 @@ export const landing = {
       },
       {
         id: "acido-mandelico",
-        name: "Ácido mandélico",
+        titleLine1: "Ácido",
+        titleLine2: "mandélico",
         description:
           "Peeling despigmentante para mejorar el tono y calidad de la piel. Ayuda en la reducción de manchas e imperfecciones.",
         image: "/images/innovation-vial.svg",
